@@ -7,7 +7,7 @@ class Calculator
 
   def initialize
   @result = DEFEAULT_RESULT
-  @answer = Printer.new
+  @printer = Printer.new
   end
 
   def add(number_1, number_2)
@@ -19,7 +19,7 @@ class Calculator
   end
 
   def print_answer
-    answer.print_answer(@result)
+    printer.print_answer(@result)
   end
 
 end

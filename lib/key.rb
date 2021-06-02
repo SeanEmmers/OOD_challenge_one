@@ -1,7 +1,5 @@
 class Key
 
-attr_reader :locked
-
   def initialize
     @locked = true
   end
@@ -15,4 +13,9 @@ attr_reader :locked
     @locked = false
     'Unlocked'
   end
+
+  def locked?
+    !!@locked
+  end
+
 end
